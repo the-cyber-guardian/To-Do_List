@@ -9,7 +9,7 @@ const Content = styled.div`
   background: rgba(255, 255, 255, 0.15);
   backdrop-filter: blur(9px);
   -webkit-backdrop-filter: blur(9px);
-  border-radius: 25px;
+  border-radius: 35px;
   border: 1px solid rgba(255, 255, 255, 0.4);
   padding: 2rem;
   margin: 2rem auto;
@@ -30,13 +30,7 @@ function App() {
     <>
       <BrowserRouter>
         <Content>
-          <h1> <img
-            src=".../../public/wild crowned logo.png"
-            alt="Logo"
-            style={{ width: '50px', height: '35px', }}
-          /><br/>To-Do List</h1>
-          <NavBar />
-          <br />
+         
           <Pages />
         </Content>
       </BrowserRouter>
