@@ -4,6 +4,11 @@ export default function AddItems() {
     return (
         <>
            <FormWrapper>
+             <nav style={navStyle}>
+        <div>
+            <a href="/" style={linkStyle}>Back</a>
+        </div> 
+    </nav>
       {/* Top row */}
       <Row>
         <InputGroup>
@@ -147,3 +152,21 @@ const CancelButton = styled.button`
   color: white;
   font-weight: bold;
 `;
+
+const navStyle = {
+    
+    padding: '10px 20px',
+    display: 'flex',
+    justifyContent: 'space-between',
+    alignItems: 'center',
+    color: '#fff',
+};
+
+const linkStyle = {
+    color: 'white',
+    textDecoration: 'none',
+    margin: '0 20px',
+    padding: '15px 50px',
+    borderRadius: '20px',
+    backgroundColor: 'rgba(4, 4, 4, 0.32)',
+};
